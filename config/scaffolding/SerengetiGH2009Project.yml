@@ -8,10 +8,33 @@ packages:
   gitUsername: ArtiKhareNew
   gitBranch: main
 - name: upperfspackage
+  version: "5.0"
   gitServerName: srcCtrl_shared_bitbucket_Arti
   gitUrl: https://bitbucket.org/testartiibm
   gitUsername: artikhare
   gitBranch: master
+- name: GithubPackageDebuglog
+  gitServerName: src_shared_GithubCtrl_Arti
+  gitUrl: https://github.com/ArtiKhareIBM
+  gitUsername: ArtiKhareNew
+  gitBranch: main
+services:
+- serviceName: project.serengetigh2009.integrations:bitbucketfs
+  packages:
+  - name: SerengetiGH2009Project
+    version: "1.0"
+  - name: upperfspackage
+    version: "5.0"
+  - name: GithubPackageDebuglog
+    version: "2.0"
+- serviceName: UpperFSPackage:upperfs
+  packages:
+  - name: upperfspackage
+    version: "5.0"
+- serviceName: pub.string:toUpper
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2107
 configurationVariables:
   jdbc.SAP TxStore Pool.maxConns: "10"
   jdbcfunc.SAPTxStore.failFastMode: false

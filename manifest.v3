@@ -10,17 +10,18 @@
   <null name="replication_services"/>
   <record name="requires" javaclass="com.wm.util.Values">
     <value name="upperfspackage">5.0</value>
+    <value name="GithubPackageDebuglog">2.0</value>
   </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">5</value>
+  <value name="build">6</value>
   <null name="description"/>
   <value name="created_date">20-09-2026 03:13:17 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2026-09-20T03:33:23.840373162Z</value>
+  <value name="lastUpdated">2026-09-20T03:35:23.650469408Z</value>
   <value name="wmProjectId">fl6ceca78bfbec90c01c5b0e</value>
   <value name="creator">Arti Khare</value>
 </Values>
